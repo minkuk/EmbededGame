@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hdy.embeddedgame.MainActivity">
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="게임 하나를 선택하시오.   "
+        android:textColor="#ff4682B4"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/gamegroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RadioButton
+            android:id="@+id/game1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="야구 게임" />
+
+        <RadioButton
+            android:id="@+id/game2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지뢰 찾기" />
+
+        <RadioButton
+            android:id="@+id/game3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="영어단어 맞추기" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="선택 완료" />
+</LinearLayout>
